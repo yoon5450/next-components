@@ -26,14 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <TanstackProvider>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <TanstackProvider>
           {children}
           <DragObserver />
-        </body>
-      </TanstackProvider>
+        </TanstackProvider>
+      </body>
     </html>
   );
 }
